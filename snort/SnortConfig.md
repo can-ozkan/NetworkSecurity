@@ -18,10 +18,22 @@ Arguably, the most important file is /etc/snort/snort.conf \
 Copy of this file: cp /etc/snort/snort.conf /etc/snort/snort.conf.bak 
 
 set your home network \
-ipvar HOME_NET \<your_subnet\> 
+ipvar HOME_NET \<your_subnet\> \
+Example: ipvar HOME_NET 192.168.1.0/24
 
 By default, the rule path is /etc/snort/rules \
 You can manually put your local signatures to /etc/snort/rules/local.rules 
+
+There are predefined rules. You can activate or deactivate them. \
+For example, include $RULE_PATH/icmp.rules
+
+## Run Snort
+The below command verifies that the Snort configuration that is about to be used is valid and won't fail at run time. \
+sudo snort -T -c /etc/snort/snort.conf -i <network_interface>
+
+To start Snort \
+sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i <network_interface>
+
 
 
 
