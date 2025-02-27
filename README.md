@@ -2,18 +2,18 @@
 This repository documents my exploration of network security tools, focusing on both defensive and offensive aspects. It includes detailed configurations, analysis, and hands-on experiments with:
 
 ## Defensive Tools:
-Snort – Intrusion Detection and Prevention System (IDS/IPS)
-Suricata – High-performance IDS, IPS, and network monitoring engine
+Snort – Intrusion Detection and Prevention System (IDS/IPS) \
+Suricata – High-performance IDS, IPS, and network monitoring engine \
 pfSense – Open-source firewall and router for network security
 
 ## Offensive Tools:
 Common attack tools and techniques used to test and evaluate defensive mechanisms.
 
 ## Repository Contents:
-Installation guides for Snort, Suricata, and pfSense
-Configuration files and rule tuning for IDS/IPS
-Attack simulations to test detection capabilities
-Analysis of alerts, logs, and performance metrics
+Installation guides for Snort, Suricata, and pfSense \
+Configuration files and rule tuning for IDS/IPS \
+Attack simulations to test detection capabilities \
+Analysis of alerts, logs, and performance metrics \
 Comparative study of Snort vs. Suricata
 
 This repository serves as a reference for setting up, analyzing, and testing network security defenses. 
