@@ -13,6 +13,7 @@ snort --version
 
 ## Snort Configuration
 First, make sure your Virtual Box promiscuous mode setting is "Allow All" \
+sudo ip link set <network_interface> promisc on \
 The snort config file is under /etc/snort \
 Arguably, the most important file is /etc/snort/snort.conf \
 Copy of this file: cp /etc/snort/snort.conf /etc/snort/snort.conf.bak 
