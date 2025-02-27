@@ -19,6 +19,9 @@ Comparative study of Snort vs. Suricata
 This repository serves as a reference for setting up, analyzing, and testing network security defenses. 
 
 ## PCAPs for Testing
+You can use Tcpreplay tool to replay captured PCAP files to simulate real attacks. \
+usage: tcpreplay -i eth0 attack.pcap
+
 https://docs.securityonion.net/en/2.4/pcaps.html \
 https://www.malware-traffic-analysis.net/ \
 https://digitalcorpora.org/corpora/network-packet-dumps/ \
