@@ -6,3 +6,5 @@ sudo apt update \
 sudo apt install -y suricata \
 suricata --build-info \
 sudo suricata-update
+
+Suricate rules can be found under /usr/share/suricata/rules. You can copy them to /etc/suricata.
