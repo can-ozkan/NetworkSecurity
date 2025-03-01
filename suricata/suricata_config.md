@@ -15,3 +15,10 @@ Configure the interface under af-packet and pcap. \
 Set community-id to true. \
 By default, rules for Modbus come with disabled. You need to activate them. \
 The rules file in under /var/lib/suricata/rules.
+
+To test suricata configuration
+sudo suricata -T -c /etc/suricata/suricata.yaml -v
+A sample output is "1 rule files processed. 42870 rules successfully loaded, 0 rules failed, 0"
+
+sudo suricata -c /etc/suricata/suricata.yaml -i enp0s8
+
