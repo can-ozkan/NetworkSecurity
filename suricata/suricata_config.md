@@ -33,7 +33,7 @@ sudo tail -f /var/log/suricata/fast.log
 Create local.rules directory under /var/lib/suricata/rules \
 alert icmp any any -> any any ( msg: "ICMP Ping"; sid:1; rev:1; ) \
 Then, modify the yaml configuration: /etc/suricata/suricata.yaml \
-Search for look-path and modify rules-files \
+Search for rule-path and modify rule-files \
 Add - local.rules \
 Then, test new configuration \
 sudo suricata -T -c /etc/suricata/suricata.yaml -v \
