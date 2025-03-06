@@ -25,5 +25,11 @@ sudo /opt/zeek/bin/zeekctl restart
 ## Log Analysis
 Logs are found under /opt/zeek/logs/current
 
+## Enable Modbus Related Rules
+sudo nano /opt/zeek/share/zeek/site/local.zeek \
+@load protocols/modbus/track-memmap.zeek \
+Then, run this again: sudo /opt/zeek/bin/zeekctl deploy
+
+
 
 
