@@ -12,6 +12,8 @@ sudo ln -s /var/lib/suricata/rules /etc/suricata/rules
 ## Configuration
 Suricate rules can be found under /usr/share/suricata/rules. You can copy them to /etc/suricata.
 
+Edit the following changes on /etc/suricata/suricata.yaml \
+Configure HOME_NET variable \
 Configure the interface under af-packet and pcap. \
 Set community-id to true. \
 By default, rules for Modbus come with disabled. You need to activate them. \
