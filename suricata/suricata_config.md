@@ -14,7 +14,7 @@ Suricate rules can be found under /usr/share/suricata/rules. You can copy them t
 
 Edit the following changes on /etc/suricata/suricata.yaml \
 Configure HOME_NET variable \
-Configure the interface under af-packet and pcap. \
+Configure the interface interface and pcap under af-packet. \
 Set community-id to true. \
 By default, rules for Modbus come with disabled. You need to activate them. \
 The rules file in under /var/lib/suricata/rules.
